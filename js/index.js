@@ -44,7 +44,6 @@ var arr = [
 ];
 var result = [];
 arr = flattenArr(arr);
-
 var classifyItem = [[], [], []];
 arr.forEach(function (item) {
   if (typeof item === "string") {
