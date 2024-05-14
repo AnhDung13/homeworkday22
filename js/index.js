@@ -60,16 +60,33 @@ document.write("<p>Bài 3: ở console</p>");
 
 // bài 4
 var contents = [
-  ["img1", "Tiêu đề 1", "lorem1"],
-  ["img2", "Tiêu đề 2", "lorem2"],
-  ["img3", "Tiêu đề 3", "lorem3"],
+  [
+    "https://picsum.photos/300/200",
+    "Tiêu đề 1",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium hic eveniet minus itaque tenetur quidem cum animi repellendus tempore, aspernatur assumenda delectus debitis in voluptatem sapiente molestias rerum architecto.",
+  ],
+  [
+    "https://picsum.photos/300/200",
+    "Tiêu đề 2",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium hic eveniet minus itaque tenetur quidem cum animi repellendus tempore, aspernatur assumenda delectus debitis in voluptatem sapiente molestias rerum architecto.",
+  ],
+  [
+    "https://picsum.photos/300/200",
+    "Tiêu đề 3",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium hic eveniet minus itaque tenetur quidem cum animi repellendus tempore, aspernatur assumenda delectus debitis in voluptatem sapiente molestias rerum architecto.",
+  ],
 ];
-// contents.forEach(function (item) {
-//   document.write(
-//     "<div class='wrapper'><img src=''><div><h2>" +
-//       item[1] +
-//       "</h2><p>" +
-//       item[2] +
-//       "</p></div></div>"
-//   );
-// });
+document.write("<p>Bài 4:</p>");
+document.write("<div class='wrap'>");
+contents.forEach(function (item) {
+  document.write(
+    " <div class='content-wrap'><img src='" +
+      item[0] +
+      "'><div><h2>" +
+      item[1] +
+      "</h2><p>" +
+      item[2] +
+      "</p></div></div>"
+  );
+});
+document.write("</div>");
