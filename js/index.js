@@ -43,9 +43,10 @@ var arr = [
   ["b", 2, false],
 ];
 var result = [];
-var flatArr = flattenArr(arr);
+arr = flattenArr(arr);
+
 var classifyItem = [[], [], []];
-flatArr.forEach(function (item) {
+arr.forEach(function (item) {
   if (typeof item === "string") {
     classifyItem[0].push(item);
   } else if (typeof item === "number") {
